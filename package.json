@@ -1,0 +1,23 @@
+{
+  "name": "stylelint-config-hzkweb",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hezhikai/lib-stylelint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hezhikai/lib-stylelint/issues"
+  },
+  "homepage": "https://github.com/hezhikai/lib-stylelint#readme",
+  "dependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.1.0"
+  }
+}
