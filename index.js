@@ -16,20 +16,32 @@ module.exports = {
     'number-leading-zero': 'always',
     'number-no-trailing-zeros': true,
     'length-zero-no-unit': true,
-    'value-list-comma-space-after': 'always',
-    'declaration-colon-space-after': 'always',
+    'value-list-comma-space-after': 'always-single-line',
+    'declaration-colon-space-after': 'always-single-line',
     'value-list-max-empty-lines': 0,
     'shorthand-property-no-redundant-values': true,
     'declaration-block-no-duplicate-properties': true,
     'declaration-block-no-redundant-longhand-properties': true,
     'declaration-block-semicolon-newline-after': 'always',
-    'block-closing-brace-newline-after': 'always',
+    'block-closing-brace-newline-after': 'always-single-line',
     'media-feature-colon-space-after': 'always',
     'media-feature-range-operator-space-after': 'always',
     'at-rule-name-space-after': 'always',
-    indentation: 2,
+    indentation: [
+      2,
+      {
+        ignore: ['inside-parens', 'param', 'value']
+      }
+    ],
     'no-eol-whitespace': true,
     'string-no-newline': null,
+    'declaration-colon-newline-after': null,
+    'unit-no-unknown': [true, { ignoreUnits: ['pica'] }],
+    'at-rule-empty-line-before': 'never',
+    'block-opening-brace-space-before': [
+      'always',
+      { ignoreAtRules: ['/else if/', '/else/', '/for/', '/each/', '/if/'] }
+    ],
     'order/order': [
       ['custom-properties', 'declarations'],
       {
